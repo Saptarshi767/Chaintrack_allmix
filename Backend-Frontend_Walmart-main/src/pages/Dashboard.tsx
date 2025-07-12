@@ -5,6 +5,7 @@ import MetricsCards from '../components/MetricsCards';
 import ChartSection from '../components/ChartSection';
 import RecentTransactions from '../components/RecentTransactions';
 import SupplyChainMap from '../components/SupplyChainMap';
+import AIPredictions from '../components/AIPredictions';
 
 const Dashboard: React.FC = () => {
   const dashboardRef = useRef<HTMLDivElement>(null);
@@ -44,6 +45,10 @@ const Dashboard: React.FC = () => {
           
           <div className="dashboard-section">
             <SupplyChainMap />
+          </div>
+          
+          <div className="dashboard-section">
+            <AIPredictions />
           </div>
         </div>
       </div>

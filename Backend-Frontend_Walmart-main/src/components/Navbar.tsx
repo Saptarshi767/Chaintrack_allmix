@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Package, Moon, Sun, Menu, X, Search, QrCode, User, Settings, LogOut, Plus } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
@@ -171,6 +171,7 @@ const Navbar: React.FC = () => {
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
               className="lg:hidden p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              title="Search"
             >
               <Search className="w-5 h-5 text-gray-600 dark:text-gray-300" />
             </button>
@@ -180,6 +181,7 @@ const Navbar: React.FC = () => {
               <button
                 onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
                 className="nav-item p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
+                title="User menu"
               >
                 <User className="w-5 h-5 text-gray-600 dark:text-gray-300" />
               </button>

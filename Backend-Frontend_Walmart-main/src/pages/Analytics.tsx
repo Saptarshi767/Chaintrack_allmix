@@ -4,6 +4,7 @@ import AnalyticsOverview from '../components/AnalyticsOverview';
 import PredictiveAnalytics from '../components/PredictiveAnalytics';
 import SupplierPerformance from '../components/SupplierPerformance';
 import InventoryOptimization from '../components/InventoryOptimization';
+import AIPredictions from '../components/AIPredictions';
 
 const Analytics: React.FC = () => {
   return (
@@ -18,6 +19,8 @@ const Analytics: React.FC = () => {
             <SupplierPerformance />
             <InventoryOptimization />
           </div>
+          
+          <AIPredictions />
         </div>
       </div>
     </div>
